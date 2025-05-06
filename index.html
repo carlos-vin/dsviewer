@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DSV - Data Structure Viewer</title>
+</head>
+
+<body>
+
+    <header>
+        Data Structure Viewer
+    </header>
+    <div class="mainContainer">
+        
+        <div class="container leftContainer">
+            <button class="btn" id="lOptBtn">Lista</button>
+            <button class="btn" id="qOptBtn">Fila</button>
+        </div>
+        <div class="container centerContainer">
+            <div id="console" class="container">
+                <div class="consoleScreen">
+                    <span class="consolePlaceholder">Console:</span>
+                    <div id="consoleInfo" class="consoleTxt">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container cmdContainer">
+                <input placeholder="Comando" class="txtBox" id="cmd" type="text">
+                <p class="parenthesis">(</p>
+                <input placeholder="Argumento" class="txtBox" id="arg" type="text">
+                <p class="parenthesis">)</p>
+                <button class="btn" id="cmdBtn">Go!</button>
+            </div>
+        </div>
+        <div class="container rightContainer">
+            <div id="blockDisplay" class="blockDisplay">
+               
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+  
+</body>
+
+</html>
